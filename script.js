@@ -18,3 +18,11 @@
 	}
 	window.scrollTo(0,0);
 }
+
+$(function(){
+	$("#input").focusin(function(e) {
+		if($(".result").css("display")!="none"){
+			$(".result").slideUp("fast");
+		}
+	});
+});
