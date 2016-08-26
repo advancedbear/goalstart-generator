@@ -1,5 +1,6 @@
 ﻿function BAN() {
 	var text = document.getElementById("input").value;
+	document.getElementById("input").value = "";
 	document.getElementById("reason_text").innerHTML = text;
 
 	var dt = new Date();
