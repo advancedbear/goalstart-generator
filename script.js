@@ -1,8 +1,6 @@
 ﻿function BAN() {
-	if($(".result").css("display") != "none") {
-		$(".result").slideUp("fast");
-	}
 	var text = document.getElementById("input").value;
+	document.getElementById("input").value = "";
 	document.getElementById("reason_text").innerHTML = text;
 
 	var dt = new Date();
@@ -18,4 +16,13 @@
 	if($(".result").css("display") == "none"){
 		$(".result").slideDown("fast");
 	}
+	window.scrollTo(0,0);
 }
+
+$(function(){
+	$("#input").focusin(function(e) {
+		if($(".result").css("display")!="none"){
+			$(".result").slideUp("fast");
+		}
+	});
+});

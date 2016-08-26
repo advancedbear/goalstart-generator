@@ -39,6 +39,7 @@ input {
 	margin:0 auto;
 	margin-bottom:8px;
 	font-size: 24px;
+	background: #FFFFFF;
 }
 
 .text, textarea {
@@ -85,6 +86,7 @@ input {
 #reason_text {
 	text-align: left;
 	padding: 5px;
+	word-break: break-all;
 }
 
 #start>div {
