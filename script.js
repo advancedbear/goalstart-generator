@@ -1,7 +1,4 @@
 ﻿function BAN() {
-	if($(".result").css("display") != "none") {
-		$(".result").slideUp("fast");
-	}
 	var text = document.getElementById("input").value;
 	document.getElementById("reason_text").innerHTML = text;
 
@@ -18,4 +15,5 @@
 	if($(".result").css("display") == "none"){
 		$(".result").slideDown("fast");
 	}
+	window.scrollTo(0,0);
 }
