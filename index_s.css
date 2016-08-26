@@ -86,6 +86,7 @@ input {
 #reason_text {
 	text-align: left;
 	padding: 5px;
+	word-break: break-all;
 }
 
 #start>div {
